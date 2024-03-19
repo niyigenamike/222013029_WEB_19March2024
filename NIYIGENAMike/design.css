@@ -1,0 +1,97 @@
+/* CSS for index.html */
+
+/* General styling */
+body {
+    background-color: #f0f0f0; /* Changed background color to light grey */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF5733; /*  header background color to red */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*  box shadow */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*  box shadow */
+    background-color: #FF5733; /*  navigation background color to red */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.dropdown {
+    position: relative; /* Changed position to relative */
+    display: inline-block;
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contents a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+}
+
+#home {
+    background-color: rgba(255, 87, 51, 0.3); /*  home section background color is less opaque red */
+}
+
+section:nth-of-type(2) {
+    background-color: rgba(255, 87, 51, 0.4); /* the middle section background color is  less opaque red */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #87ceeb; /* this is the  footer background color which is  sky blue */
+}
+
+/* Button hover effect */
+nav a:hover,
+.dropdown:hover .dropdown-contents a:hover {
+    background-color: #ddd; /* this background color when hovering over buttons */
+}
